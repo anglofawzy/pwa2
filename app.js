@@ -34,14 +34,14 @@ document.getElementById('content').innerHTML = content;
 // }
 
 // Requesting permission for Notifications after clicking on the button
-const button = document.getElementById('notifications');
-button.addEventListener('click', () => {
-  Notification.requestPermission().then((result) => {
-    if (result === 'granted') {
-      randomNotification();
-    }
-  });
-});
+// const button = document.getElementById('notifications');
+// button.addEventListener('click', () => {
+//   Notification.requestPermission().then((result) => {
+//     if (result === 'granted') {
+//       randomNotification();
+//     }
+//   });
+// });
 
 // Setting up random Notification
 function randomNotification() {
