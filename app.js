@@ -27,7 +27,7 @@ document.getElementById('content').innerHTML = content;
 // Registering Service Worker
 if ('serviceWorker' in navigator) {
   try {
-    navigator.serviceWorker.register('/pwa2/sw.js')
+    navigator.serviceWorker.register('/pwa2/sw.js').then(() => {console.log('test1');})
   } catch (error) {
     console.log('error');
   }
