@@ -27,7 +27,6 @@ document.getElementById('content').innerHTML = content;
 // Registering Service Worker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/pwa2/sw.js').then(() => {console.log('test1');})
-  console.log('done');
 }
 
 // Requesting permission for Notifications after clicking on the button
